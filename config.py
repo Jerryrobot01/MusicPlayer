@@ -60,7 +60,7 @@ else:
 class Config:
     ADMIN = os.environ.get("ADMINS", '')
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    API_ID = int(os.environ.get("API_ID", ''))
+    API_ID = int(os.environ.get("API_ID", '10561476'))
     CHAT = int(os.environ.get("CHAT", ""))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
     if LOG_GROUP:
@@ -84,9 +84,9 @@ class Config:
         EDIT_TITLE=None
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 15))
     DELAY = int(os.environ.get("DELAY", 10))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_HASH = os.environ.get("API_HASH", "1753f9169bd7854e98629836b2b469f4")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6116698119:AAFmww3-Cr3NiEIpcePkRSXXKJTpo2VXWQw")     
+    SESSION = os.environ.get("SESSION_STRING", "BQC98M8Xly9cDY-gS4vjoZttWSvR-6d2YNUP8HbyoQrrfCXfsMne_DllwUI9CI0yyYitoxmuonGiq_4MH_dVcT2e1BD-KsnbsNlAD-ufKpEOCpd4fgYnN8gJB20xg1YTirCdsptRovJXvbNbseUbTA9Vox9PHI_NLqTUvpRQexdEPzOJN77OkhTQrOWw58ItkMNg7h0Nzu3tbG9F-ImJwsF2iHBjFcNzF-KDpzmSZ1oCncutqSAWPAMQjqrbnyepbovIWfF3u5EGU9hTsqjPWMchbcQXjr7lS2yAyKSxU2QIiw1iEHscphgTgogHpgTCvxuAeZwsCwvIzTmnCoVyeIaiM_HndwA")
     playlist=[]
     msg = {}
     CONV = {}
